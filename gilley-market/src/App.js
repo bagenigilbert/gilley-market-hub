@@ -9,8 +9,18 @@ const Header = () => {
         //inside header component
         <header className="header"> {/* This is like building the top part of the website */}
         <div className="logo">
-            
+             {/* This is the name of the website */}
+        <Link to="/">GILLEY MARKET HUB</Link>
         </div>
+        <nav className="nav-links">
+            <ul>
+                 {/* These are like the buttons to different places */}
+          <li><Link to="/">Home</Link></li>
+          <li><Link to="/products">Products</Link></li>
+          <li><Link to="/cart">Cart</Link></li>
+            </ul>
+
+        </nav>
 
         </header>
     );
